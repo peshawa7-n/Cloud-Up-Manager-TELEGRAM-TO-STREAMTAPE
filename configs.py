@@ -12,7 +12,7 @@ class Config(object):
 	STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME")
 	SESSION_NAME = os.environ.get("SESSION_NAME", "CloudUploadManagerBot")
 	BOT_OWNER = int(os.environ.get("BOTOWNER_ID"))
-	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+	LOG_CHANNEL = int(os.environ.get("CHANNEL_ID"))
 	DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
 	HELP_TEXT = """
 Send me any Media & Choose Upload Server,
