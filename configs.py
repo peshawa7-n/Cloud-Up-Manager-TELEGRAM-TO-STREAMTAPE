@@ -13,7 +13,7 @@ class Config(object):
 	SESSION_NAME = os.environ.get("SESSION_NAME", "CloudUploadManagerBot")
 	BOT_OWNER = int(os.environ.get("BOTOWNER_ID"))
 	LOG_CHANNEL = int(os.environ.get("CHANNEL_ID"))
-	DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR=/home/user/myvideos", "./downloads")
+	DOWNLOAD_DIR = os.environ.get("/home/user/myvideos", "./downloads")
 	HELP_TEXT = """
 Send me any Media & Choose Upload Server,
 I will Upload the Media to that server.
