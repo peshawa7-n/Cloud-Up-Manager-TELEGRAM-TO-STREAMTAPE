@@ -4,14 +4,14 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID"))
-	API_HASH = os.environ.get("API_HASH")
+	API_ID = int(os.environ.get("APITELEGRAM_ID"))
+	API_HASH = os.environ.get("APITELEGRAM_HASH")
 	BOT_TOKEN = os.environ.get("BOT_TOKEN")
 	GOFILE_API = os.environ.get("GOFILE_API")
-	STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS")
+	STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_KEY")
 	STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME")
 	SESSION_NAME = os.environ.get("SESSION_NAME", "CloudUploadManagerBot")
-	BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+	BOT_OWNER = int(os.environ.get("BOTOWNER_ID"))
 	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
 	DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
 	HELP_TEXT = """
